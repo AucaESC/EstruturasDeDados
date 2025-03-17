@@ -1,44 +1,36 @@
-# Estruturas de Dados
+# Projeto: Histórico de Navegação em um Navegador
 
-Estruturas de dados são formas organizadas de armazenar e gerenciar dados em um computador, permitindo que eles sejam acessados, modificados e utilizados de maneira eficiente. Elas são fundamentais na ciência da computação porque fornecem maneiras eficazes de organizar informações, o que é crucial para o desenvolvimento de algoritmos e sistemas complexos.
+Este projeto simula o funcionamento do histórico de navegação em um navegador web utilizando a estrutura de dados **pilha (stack)**. A pilha é ideal para esse cenário, pois segue o princípio **LIFO (Last In, First Out)**, onde a última página visitada é a primeira a ser acessada ao voltar.
 
-## Principais Tipos de Estruturas de Dados
+---
 
-### 1. Arrays (Vetores e Matrizes)
-Coleções ordenadas de elementos do mesmo tipo, acessíveis por índices.
+## Funcionalidades
 
-### 2. Listas Ligadas
-Sequências de elementos onde cada elemento aponta para o próximo, permitindo inserções e remoções eficientes.
+1. **Visitar uma página**:
+   - Adiciona a página ao topo do histórico.
+2. **Voltar para a página anterior**:
+   - Remove a página atual do histórico e retorna à página anterior.
+3. **Exibir página atual**:
+   - Mostra a página que está sendo visualizada no momento.
+4. **Exibir histórico completo**:
+   - Mostra todas as páginas visitadas até o momento.
 
-### 3. Pilhas (Stacks)
-Segue o princípio LIFO (Last In, First Out), onde o último elemento adicionado é o primeiro a ser removido.
+---
 
-### 4. Filas (Queues)
-Segue o princípio FIFO (First In, First Out), onde o primeiro elemento adicionado é o primeiro a ser removido.
+## Como Funciona
 
-### 5. Árvores
-Estruturas hierárquicas com um nó raiz e subárvores, usadas em buscas e ordenações.
+O histórico de navegação é implementado usando uma pilha. Cada nova página visitada é **empilhada**, e ao clicar em "Voltar", a última página é **desempilhada**.
 
-### 6. Grafos
-Conjuntos de nós conectados por arestas, úteis para representar redes e relações complexas.
+### Exemplo de Funcionamento:
+1. O usuário visita as páginas na seguinte ordem:
+   - `página1.com`
+   - `página2.com`
+   - `página3.com`
+2. Ao clicar em "Voltar":
+   - O sistema remove `página3.com` e retorna para `página2.com`.
 
-### 7. Tabelas Hash
-Estruturas que mapeiam chaves para valores, permitindo buscas rápidas.
+---
 
-## Importância das Estruturas de Dados
+## Estrutura do Projeto
 
-### 1. Eficiência
-A escolha da estrutura de dados certa pode melhorar significativamente a performance de um algoritmo.
-
-### 2. Organização
-Facilitam a gestão de grandes volumes de dados, tornando-os mais acessíveis e manipuláveis.
-
-### 3. Reutilização
-Estruturas de dados bem definidas podem ser reutilizadas em diferentes aplicações, economizando tempo e esforço.
-
-### 4. Abstração
-Permitem que os programadores se concentrem na lógica do problema, sem se preocupar com detalhes de implementação.
-
-## Conclusão
-
-Em resumo, as estruturas de dados são essenciais para a criação de algoritmos eficientes e sistemas robustos, sendo um pilar fundamental da ciência da computação.
+O projeto é composto por um único arquivo Python (`historico_navegacao.py`) que contém a implementação do histórico de navegação.
