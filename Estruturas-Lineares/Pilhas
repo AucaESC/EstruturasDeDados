@@ -1,0 +1,131 @@
+### Pilhas: Estruturas de Dados com Princípio LIFO
+
+#### O que é uma Pilha?
+Uma pilha é uma estrutura de dados linear que opera com base no princípio **LIFO** (Last In, First Out), ou seja, o último elemento adicionado é o primeiro a ser removido. Imagine uma pilha de livros: o último livro colocado é o primeiro a ser retirado.
+
+---
+
+### Características Principais
+1. **Princípio LIFO**: O último elemento inserido é o primeiro a ser removido.
+2. **Acesso Restrito**: Operações são realizadas apenas no topo da pilha.
+3. **Operações Básicas**: `push` (inserir) e `pop` (remover).
+4. **Implementação**: Pode ser feita com arrays ou listas encadeadas.
+
+---
+
+### Operações Básicas
+
+#### 1. **Push (Empilhar)**
+- Adiciona um elemento ao topo da pilha.
+- Em arrays: Incrementa o índice do topo e insere o elemento.
+- Em listas encadeadas: Cria um novo nó e o conecta ao topo.
+
+#### 2. **Pop (Desempilhar)**
+- Remove o elemento do topo da pilha.
+- Em arrays: Retorna o elemento do topo e decrementa o índice.
+- Em listas encadeadas: Move a referência do topo para o próximo nó.
+
+#### 3. **Peek (Espiar)**
+- Retorna o elemento do topo sem removê-lo.
+- Útil para verificar o próximo elemento a ser processado.
+
+#### 4. **isEmpty (Está Vazia)**
+- Verifica se a pilha não contém elementos.
+- Retorna `true` se a pilha estiver vazia.
+
+#### 5. **isFull (Está Cheia)**
+- Verifica se a pilha atingiu sua capacidade máxima.
+- Relevante apenas para implementações com arrays de tamanho fixo.
+
+#### 6. **Size (Tamanho)**
+- Retorna o número de elementos presentes na pilha.
+
+---
+
+### Complexidade das Operações
+| Operação | Complexidade |
+|----------|--------------|
+| Push     | O(1)         |
+| Pop      | O(1)         |
+| Peek     | O(1)         |
+| isEmpty  | O(1)         |
+| isFull   | O(1)         |
+| Size     | O(1)         |
+
+---
+
+### Implementações
+
+#### 1. **Usando Array**
+- **Vantagens**: Simplicidade e acesso rápido ao topo.
+- **Desvantagens**: Tamanho fixo e risco de estouro.
+- **Detalhes**: Requer uma variável para rastrear o índice do topo.
+
+#### 2. **Usando Lista Encadeada**
+- **Vantagens**: Tamanho dinâmico e sem limite de crescimento.
+- **Desvantagens**: Overhead de memória devido às referências.
+- **Detalhes**: Inserções e remoções ocorrem apenas no início da lista.
+
+---
+
+### Aplicações Práticas
+
+1. **Avaliação de Expressões**:
+   - Conversão de expressões infixas para pós-fixas.
+   - Avaliação de expressões pós-fixas.
+
+2. **Gerenciamento de Memória**:
+   - Rastreamento de chamadas de funções (call stack).
+
+3. **Operações "Desfazer/Refazer"**:
+   - Em editores de texto e aplicativos gráficos.
+
+4. **Navegação em Histórico**:
+   - Botões "Voltar" e "Avançar" em navegadores web.
+
+5. **Verificação de Parênteses**:
+   - Verificar se expressões têm parênteses balanceados.
+
+6. **Algoritmos de Backtracking**:
+   - Busca em profundidade (DFS) em grafos.
+
+7. **Conversão de Bases Numéricas**:
+   - Converter números entre bases diferentes.
+
+8. **Algoritmos de Ordenação**:
+   - Implementação do QuickSort.
+
+---
+
+### Exemplo Prático: Navegador Web
+Os navegadores usam pilhas para gerenciar o histórico de navegação:
+1. Cada nova página visitada é empilhada.
+2. O botão "Voltar" desempilha a página atual e retorna à anterior.
+3. Uma segunda pilha armazena as páginas acessadas com "Voltar" para habilitar o botão "Avançar".
+
+---
+
+### Limitações
+1. **Acesso Restrito**: Só é possível acessar o elemento no topo.
+2. **Busca Ineficiente**: Encontrar um elemento específico pode exigir desempilhar vários itens.
+3. **Tamanho Fixo**: Em implementações com arrays, pode haver estouro ou desperdício de espaço.
+
+---
+
+### Variações de Pilhas
+
+1. **Pilha Dupla**:
+   - Gerencia duas pilhas em um único array.
+
+2. **Pilha com Mínimo/Máximo**:
+   - Mantém o controle do menor ou maior elemento em tempo constante.
+
+3. **Pilha Circular**:
+   - Reutiliza espaço em arrays quando elementos são desempilhados.
+
+---
+
+### Conclusão
+As pilhas são estruturas de dados simples, mas poderosas, amplamente utilizadas em diversas aplicações. Sua natureza LIFO as torna ideais para cenários onde a ordem de processamento é crucial, como em chamadas de funções, avaliação de expressões e navegação em históricos. A escolha entre implementações com arrays ou listas encadeadas depende das necessidades de desempenho e flexibilidade do programa.
+
+---
