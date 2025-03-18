@@ -74,8 +74,6 @@ Uma fila é uma estrutura de dados linear que segue o princípio FIFO (First In,
 4. **Algoritmos de Busca em Largura (BFS)**: Em grafos para explorar todos os vértices a uma determinada distância antes de avançar.
 5. **Gerenciamento de Atendimento**: Em call centers, sistemas de suporte ao cliente.
 6. **Cache de Dados**: Implementação de estruturas como LRU cache (Least Recently Used).
-7. **Simulação de Eventos Discretos**: Para modelar sistemas baseados em eventos.
-8. **Agendamento de Tarefas**: Em sistemas distribuídos como Kafka ou RabbitMQ.
 
 ## Exemplo de Caso Real: Sistema de Atendimento
 
