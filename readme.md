@@ -34,3 +34,10 @@ O histórico de navegação é implementado usando uma pilha. Cada nova página 
 ## Estrutura do Projeto
 
 O projeto é composto por um único arquivo Python (`historico_navegacao.py`) que contém a implementação do histórico de navegação.
+
+
+## Alunos
+
+Igor de Sousa Vieira Araujo 
+Pedro Henrique Moraes Amaral 
+Cauã Ediuardo Silva de Carvalho Mendes 
