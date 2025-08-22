@@ -38,6 +38,4 @@ O projeto é composto por um único arquivo Python (`historico_navegacao.py`) qu
 
 ## Alunos
 
-Igor de Sousa Vieira Araujo 
-Pedro Henrique Moraes Amaral 
 Cauã Eduardo Silva de Carvalho Mendes 
