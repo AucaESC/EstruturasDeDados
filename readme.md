@@ -40,4 +40,4 @@ O projeto é composto por um único arquivo Python (`historico_navegacao.py`) qu
 
 Igor de Sousa Vieira Araujo 
 Pedro Henrique Moraes Amaral 
-Cauã Ediuardo Silva de Carvalho Mendes 
+Cauã Eduardo Silva de Carvalho Mendes 
