@@ -62,4 +62,3 @@ Em um sistema de gerenciamento de estoque:
 A alocação estática de memória é uma abordagem eficiente e segura para cenários onde o tamanho dos dados é conhecido e não varia. Sua previsibilidade e desempenho a tornam ideal para sistemas embarcados, aplicações críticas e estruturas de tamanho fixo. No entanto, sua falta de flexibilidade a torna inadequada para situações onde o tamanho dos dados pode mudar dinamicamente. A escolha entre alocação estática e dinâmica deve ser baseada nas necessidades específicas do programa e nos recursos disponíveis.
 
 ---
-caua esta aqui
